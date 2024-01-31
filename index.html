@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sorting Algorithm Visualizer</title>
+  </head>
+  <body>
+    <div id="controls">
+      <button onclick="randomizeArray()">Randomize Array</button>
+      <button onclick="insertionSort()">Insertion Sort</button>
+      <button onclick="selectionSort()">Selection Sort</button>
+      <button onclick="bubbleSort()">Bubble Sort</button>
+      <button onclick="quickSort()">Quick Sort</button>
+      <button onclick="mergeSort()">Merge Sort</button>
+      <button onclick="shellSort()">Shell Sort</button>
+      <button onclick="changeSize()">Change Size</button>
+      <button onclick="changeCanvasSize()">Change Canvas Size</button>
+      <label for="animation-speed">Animation Speed:</label>
+      <input type="range" id="animation-speed" min="1" max="100" value="50" />
+      <label for="canvas-width">Canvas Width:</label>
+      <input type="number" id="canvas-width" value="1000" />
+      <label for="canvas-height">Canvas Height:</label>
+      <input type="number" id="canvas-height" value="500" />
+    </div>
+    <div id="visualization-container">
+      <div id="array-info"></div>
+      <canvas id="array-chart"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
